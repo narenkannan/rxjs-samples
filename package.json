@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite-server": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/narenkannan/rxjs-samples/issues"
   },
-  "homepage": "https://github.com/narenkannan/rxjs-samples#readme"
+  "homepage": "https://github.com/narenkannan/rxjs-samples#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "^5.0.0-beta.12"
+  }
 }
