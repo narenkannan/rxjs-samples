@@ -1,5 +1,10 @@
+console.log('welcome  to rxjs programming!');
+
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('welcome  to rxjs programming!');
+    var click = 0;
     var button = document.querySelector('button');
-    button.addEventListener('click', () => console.log('Clicked!'));
+    Rx.Observable.fromEvent(button,'click').subscribe(function(){
+         click++;
+        console.log('Clicked!'+ click);
+    })
 })
